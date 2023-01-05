@@ -1,148 +1,93 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>David Yoon</title>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="SHORTCUT ICON" HREF="img/david_icon.jpg">
 </head>
 
-<body style="background-color: #ede6ef;">
-    <table cellspacing="20">
-        <tr>
-            <td><img src="images/ohtani.jpg" alt="SHOHEI OHTANI" style="width:200px;height:140px;"></td>
-            <td>
-                <h1>David Yoon</h1>
-                <a href="https://www.youtube.com" target="_blank">My Linkedin</a>
-                <br>
-                <a href="playbook.html" target="_blank">My Playbook</a>
-                <p><em>david@gmail.com</em></p>
-            </td>
-        </tr>
-    </table>
+<body>
+    <!-- -------------------------------- Navigation -------------------------------- -->
+    <nav>
+        <a href="#" class="logo">David Yoon</a>
+        <!-- <div class="logo" href="#">
+            <a>David Yoon</a>
+        </div> -->
+        <ul class="nav-links">
+            <li><a href="#">Biography</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Photography</a></li>
+            <!-- <li><a href="#">Contact</a></li> -->
+        </ul>
+        <a href=""><button id="contact">Contact</button></a>
+    </nav>
 
-    <h3><strong>Education</strong></h3>
-    <p><strong>University of California, Irvine</strong></p>
-    <p>Bachelor of Science in Computer Science</p>
-    <p>Cumulative GPA: 3.41 / Major GPA: 3.70</p>
-    <p>Awards: ICS Honors Student, UCI Dean’s Honor List in Summer 2021, Fall 2021, Spring 2022, Winter 2022
-    </p>
-    <hr>
-    <!--TECHNICAL SKILLS-->
+    <section class="banner"></section>
 
-    <h3><strong>Technical Skills</strong></h3>
-    <p><strong>Programming Language:</strong></p>
-    <table cellspacing="10">
-        <tr>
-            <td>Python</td>
-            <td>⭐️⭐️⭐️⭐️</td>
-        </tr>
-        <tr>
-            <td>C++</td>
-            <td>⭐️⭐️⭐️⭐️</td>
-        </tr>
-        <tr>
-            <td>C#</td>
-            <td>⭐️⭐️</td>
-        </tr>
-        <tr>
-            <td>Java</td>
-            <td>⭐️⭐️⭐️</td>
-        </tr>
-        <tr>
-            <td>SQL</td>
-            <td>⭐️⭐️</td>
-        </tr>
-        <tr>
-            <td>MIPS assembly</td>
-            <td>⭐️⭐️</td>
-        </tr>
-    </table>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var nav = document.querySelector("nav");
+            nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
 
-    <p><strong>Software:</strong></p>
-    <table>
-        <tr>
-            <td>Microsoft</td>
-            <td>⭐️⭐️⭐️</td>
-        </tr>
-        <tr>
-            <td>Excel</td>
-            <td>⭐️⭐️⭐️</td>
-        </tr>
-    </table>
+    <!-- -------------------------------- Header -------------------------------- -->
+    <header class="intro">
+        <h2>David<br>Yoon</h2>
+        <p>Student
+            <BR> University of California, Irvine
+        </p>
+        <BR>
+        <BR>
+        <BR>
+        <a href="#bio" class="btn btn-circle page-scroll">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>
+        <BR>
+        <BR>
+        <BR>
+        <BR>
+    </header>
 
-    <p><strong>Language:</strong></p>
-    <table>
-        <tr>
-            <td>Korean</td>
-            <td>⭐️⭐️⭐️⭐️⭐️</td>
-        </tr>
-        <tr>
-            <td>English</td>
-            <td>⭐️⭐️⭐️⭐️</td>
-        </tr>
-        <tr>
-            <td>Spanish</td>
-            <td>⭐️⭐️⭐️⭐️</td>
-        </tr>
-    </table>
-    <hr>
-    <!--PROJECTS-->
 
-    <h3><strong>Projects</strong></h3>
-    <table>
-        <tr>
-            <td align="left"><strong>Othello AI</strong></td>
-            <td align="right">May 2022</td>
-        </tr>
-    </table>
-    <ul>
-        <li>Created an AI for the game Othello where the AI took information about the state of the board and calculated
-            an educated move</li>
-        <li>Programmed in C++ with the intent of demonstrating usage of data structures and recursion</li>
-    </ul>
 
-    <p><strong>Wordle</strong> - January 2022</p>
-    <ul>
-        <li>Recreated the game Wordle with MIPS Assembly with basic bitwise operations</li>
-    </ul>
+    <!-- Bio Section -->
+    <bio>
+        <h2>Biography</h2>
+        David Yoon is a student from University of California, Irvine majoring in Computer Science
+        <BR>
+        <BR>
+        <br>
+    </bio>
 
-    <p><strong>Othello AI</strong> - November 2021</p>
-    <ul>
-        <li>Created a simulation that consisted of different preys and predators, where the predator took
-            information about its surroundings to catch preys</li>
-        <li>Programmed in Python with the intent of demonstrating usage of inheritance and creating a simulation</li>
-    </ul>
-    <hr>
-    <!--WORK AND LEADERSHIP EXPERIENCE-->
 
-    <h3><strong>Work and Leadership Experience</strong></h3>
-    <p><strong>Republic of Korea Army, Sam Cheok, Republic of Korea</strong> - July 2019 – February 2021</p>
-    <p>Sergeant</p>
-    <ul>
-        <li>Served as Coast Guard responsible for monitoring trespassers and identifying water transports in the
-            frontline</li>
-        <li>Responsible for managing Thermal Observation Devices such as TAS-970K and TAS-815K.</li>
-        <li>Held the position of military chaplain to conduct Buddhist services and counsel colleagues</li>
-    </ul>
 
-    <p><strong>Topic, Santiago, Chile</strong> - Summer 2017, Summer 2018</p>
-    <p>Sales Associate</p>
-    <ul>
-        <li>Provided customer service by attending to customers based on different requests, including item suggestion,
-            size changes, and refund procedures, leading to an increase of sales by 16%</li>
-        <li>Managed product inventory, specifically updating products on stockout and removing items from past seasons
-        </li>
-    </ul>
-    <hr>
-    <!--ACTIVITIES-->
-
-    <h3><strong>Activities</strong></h3>
-    <p><strong>LIKE LION US, Irvine, CA</strong> - September 2022 - Present</p>
-    <p>Member</p>
-    <ul>
-        <li>Student-run Tech Entrepreneurship Community to solve real-world problems and develop ideas into competitive
-            products using programming</li>
-    </ul>
+    <!-- Contact Section -->
+    <contact><BR>
+        <BR>
+        <BR>
+        <BR>
+        <BR>
+        <BR>
+        <BR>
+        <BR>
+        <BR>
+        <BR>
+        <h2>Contact Me</h2>
+        <p><a href="mailto:seongjiy@uci.edu">seongjiy@uci.edu</a>
+        </p>
+        <BR>
+        <BR>
+        <BR>
+        <BR>
+    </contact>
 </body>
 
 </html>
