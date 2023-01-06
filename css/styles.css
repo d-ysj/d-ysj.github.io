@@ -134,7 +134,7 @@
         height: 100vh;
         background: url(../img/beach.jpg);
         background-size: cover;
-        /* z-index: -1; */
+        z-index: -1;
     }
 
     .sticky ul li a,
@@ -149,4 +149,25 @@
         padding: 25px 100px;
         background: #fff;
         /* background: #24252A; */
+    }
+
+    .banner-letter {
+        font-size: large;
+        font-weight: 300;
+        top: 300px;
+        position: relative;
+        text-align: center;
+        /* vertical-align: middle; */
+    }
+
+    .intro {
+        color: white;
+    }
+
+    bio {
+        color: white;
+    }
+
+    contact {
+        color: white;
     }
