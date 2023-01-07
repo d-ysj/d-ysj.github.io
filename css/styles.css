@@ -14,15 +14,12 @@
 
     body {
         background-color: #24252A;
+        min-height: 200vh;
         /* width: 100%;
         height: 100%; */
-        /* font-family: 'Montserrat', sans-serif; */
-        /* color: #fff; */
-
-        min-height: 200vh;
     }
 
-    /* ---------------- Navigation ---------------- */
+    /* ---------------- NAVIGATION BAR ---------------- */
     nav {
         position: fixed;
         top: 0;
@@ -44,9 +41,7 @@
         z-index: 100000;
     }
 
-
-
-    .logo {
+    nav .logo {
         font-weight: bold;
         font-size: 16px;
         color: white;
@@ -58,9 +53,8 @@
         transition: 0.6s;
     }
 
-    a.logo:hover {
+    nav a.logo:hover {
         color: rgb(203, 196, 196);
-        /* color: red; */
     }
 
     nav .nav-links {
@@ -73,31 +67,14 @@
         width: 25%;
     }
 
-    /* ? */
-    /* nav .nav-links,
-    li {
-        position: relative;
-        list-style: none;
-    } */
-
-    /* ? */
-    /* nav .nav-links,
-    li a {
-        position: relative;
-        margin: 0 15px;
-        text-decoration: none;
-        color: #fff;
-        transition: 0.6s;
-    } */
-
     nav .nav-links a {
-        position: relative;
+        color: white;
         font-size: 16px;
         font-weight: 500;
-        color: white;
         text-decoration: none;
-        padding: 0px 16px;
 
+        position: relative;
+        padding: 0px 16px;
         transition: all 0.3s ease 0s;
     }
 
@@ -106,37 +83,26 @@
     }
 
     #contact {
-        font-family: 'Montserrat', sans-serif;
-        color: black;
         font-size: 16px;
         font-weight: 500;
         background-color: rgba(0, 136, 169, 1);
         border: none;
-        padding: 8px 16px;
         border-radius: 50px;
         cursor: pointer;
-        transition: all 0.3s ease 0s;
-
         text-decoration: none;
 
+        padding: 6px 14px;
+        transition: all 0.3s ease 0s;
         position: relative;
     }
 
     #contact:hover {
         color: rgb(225, 225, 225);
         background-color: rgba(6, 82, 101, 0.8);
+        box-shadow: 2px 2px 8px rgb(132, 131, 131);
     }
 
-    .banner {
-        /* top: 100px; */
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        background: url(../img/beach.jpg);
-        background-size: cover;
-        z-index: -1;
-    }
-
+    /* ----- sticky effect ----- */
     .sticky ul li a,
     .sticky .logo {
         color: black;
@@ -146,28 +112,74 @@
         height: 0;
         /* padding: 0px, 0px; */
         /* padding: 0; */
-        padding: 25px 100px;
+        padding: 24px 7%;
         background: #fff;
         /* background: #24252A; */
+    }
+
+    /* ---------------- BACKGROUND IMAGE/TEXT ---------------- */
+    .banner {
+        position: relative;
+        /* position: fixed; */
+        width: 100%;
+        height: 100vh;
+        background: url(../img/beach.jpg);
+        background-size: cover;
+        z-index: -1;
+        /* background-color: transparent; */
+        background-attachment: fixed;
     }
 
     .banner-letter {
         font-size: large;
         font-weight: 300;
-        top: 300px;
+        /* top: 380px; */
+        top: 40%;
         position: relative;
         text-align: center;
         /* vertical-align: middle; */
     }
 
-    .intro {
-        color: white;
+    .banner-letter #name {
+        font-family: 'Lato', sans-serif;
+        font-size: 32px;
+        font-weight: 2000;
+        color: black;
+        letter-spacing: 5px;
     }
 
-    bio {
-        color: white;
+    .banner-letter #school {
+        letter-spacing: 1px;
     }
 
+    /* #credit {
+        color: red;
+        background-attachment: fixed;
+        text-align: center;
+        position: relative;
+        z-index: -1;
+    } */
+
+    /* ---------------- BIOGRAPHY ---------------- */
+    about {
+        /* top: 40px; */
+        color: white;
+        top: 20vh;
+        position: relative;
+        text-align: center;
+    }
+
+    /* about #aboutme {
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 1px;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 36px;
+    } */
+
+    /* ---------------- PROJECTS ---------------- */
+    /* ---------------- PHOTOGRAPHY ---------------- */
+    /* ---------------- CONTACT ---------------- */
     contact {
         color: white;
     }

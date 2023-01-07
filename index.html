@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Yoon</title>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="css/styles.css">
 
     <link rel="SHORTCUT ICON" HREF="img/david_icon.jpg">
@@ -21,7 +22,7 @@
             <a>David Yoon</a>
         </div> -->
         <ul class="nav-links">
-            <li><a href="#">Biography</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Photography</a></li>
             <!-- <li><a href="#">Contact</a></li> -->
@@ -29,30 +30,32 @@
         <a href=""><button id="contact">Contact</button></a>
     </nav>
 
+    <script type=" text/javascript">
+        window.addEventListener("scroll", function () {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky", window.scrollY > 0);
+        })
+        </script>
+
     <section class="banner">
         <div class="banner-letter">
-            <h2>David<br>Yoon</h2>
+            <p id="name">David<br>Yoon</p>
             <BR>
-            <p>Student<BR>University of California, Irvine
+            <p id="school">Student<BR>University of California, Irvine
             </p>
         </div>
+        <p class="credit">credit: David Yoon</p>
     </section>
 
-    <script type="text/javascript">
-        window.addEventListener("scroll", function () {
-            var nav = document.querySelector("nav");
-            nav.classList.toggle("sticky", window.scrollY > 0);
-        })
-    </script>
-
     <!-- -------------------------------- Biography -------------------------------- -->
-    <bio>
-        <h2>Biography</h2>
-        David Yoon is a student from University of California, Irvine majoring in Computer Science
+    <about>
+        <h2>Hello, I'm David Yoon</h2>
+        <br>
+        <p>An aspiring full stack developer</p>
         <BR>
         <BR>
         <br>
-    </bio>
+    </about>
 
     <!-- -------------------------------- Projects -------------------------------- -->
 
