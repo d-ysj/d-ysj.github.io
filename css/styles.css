@@ -167,13 +167,21 @@
         /* top: 40px; */
         color: white;
         top: 20vh;
-        position: relative;
-        position: absolute;
+        /* position: relative; */
+        /* position: absolute; */
         left: 50%;
-        top: 140%;
+        top: 150%;
         transform: translate(-50%, -50%);
         text-align: center;
         padding: 50px 50px;
+    }
+
+    about h2 {
+        font-size: 36px;
+    }
+
+    about p {
+        font-size: 16px;
     }
 
     /* about #aboutme {
@@ -187,12 +195,6 @@
     /* ---------------- PROJECTS ---------------- */
     projects {
         color: white;
-        top: 20vh;
-        position: relative;
-        position: absolute;
-        left: 50%;
-        top: 180%;
-        transform: translate(-50%, -50%);
         text-align: center;
         padding: 50px 50px;
     }
@@ -200,12 +202,6 @@
     /* ---------------- PHOTOGRAPHY ---------------- */
     photography {
         color: white;
-        top: 20vh;
-        position: relative;
-        position: absolute;
-        left: 50%;
-        top: 220%;
-        transform: translate(-50%, -50%);
         text-align: center;
         padding: 50px 50px;
     }
@@ -213,12 +209,6 @@
     /* ---------------- CONTACT ---------------- */
     contact {
         color: white;
-        top: 20vh;
-        position: relative;
-        position: absolute;
-        left: 50%;
-        top: 260%;
-        transform: translate(-50%, -50%);
         text-align: center;
         padding: 50px 50px;
     }
